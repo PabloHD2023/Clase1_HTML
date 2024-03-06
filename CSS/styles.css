@@ -8,6 +8,115 @@
   font-style: normal;
 }
 
+.barlow-condensed-thin {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .barlow-condensed-extralight {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .barlow-condensed-light {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .barlow-condensed-regular {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .barlow-condensed-medium {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .barlow-condensed-semibold {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .barlow-condensed-bold {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .barlow-condensed-extrabold {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .barlow-condensed-black {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .barlow-condensed-thin-italic {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .barlow-condensed-extralight-italic {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .barlow-condensed-light-italic {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .barlow-condensed-regular-italic {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .barlow-condensed-medium-italic {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .barlow-condensed-semibold-italic {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .barlow-condensed-bold-italic {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .barlow-condensed-extrabold-italic {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .barlow-condensed-black-italic {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+
 *{
     padding: 0;
     margin: 0;
@@ -35,9 +144,10 @@ body{
 .menu_nav a{
     text-decoration: none;
     font-family: "Raleway", sans-serif;
-    color: black;
     font-size: 13px;
     margin: 0 10px;
+    font-weight: bold;
+    color: rgb(55, 58, 74);
 }
 
 .footer_links{
@@ -49,7 +159,7 @@ body{
 .footer_nav a{
     text-decoration: none;
     font-family: "Raleway", sans-serif;
-    color: rgb(255, 255, 255);
+    color: rgb(55, 58, 73);
     font-size: 13px;
     margin: 0 10px;
     font-weight: bold;
@@ -72,18 +182,15 @@ body{
 
 }
 
-.header_nav ul li{
-    list-style: none;
-    margin-right: 10px;
-    font-size: 10px;
-    font-family: "Raleway", sans-serif;
+.header_nav a:hover{
+    color: rgb(255, 106, 0);
 }
 
 .seccion1{
     width: 100%;
     text-align: justify;
-    font-family: "Raleway", sans-serif;
-    font-size: 15px;
+    font-family: "Barlow", sans-serif;
+    font-size: 14px;
     margin: 20px 0 20px 0;
 }
 
@@ -103,8 +210,8 @@ body{
 .seccion2{
     width: 100%;
     text-align: justify;
-    font-family: "Raleway", sans-serif;
-    font-size: 15px;
+    font-family: "Barlow", sans-serif;
+    font-size: 14px;
     margin: 20px 0 20px 0;
 }
 
@@ -124,13 +231,13 @@ body{
 .seccion3{
     width: 100%;
     text-align: justify;
-    font-family: "Raleway", sans-serif;
-    font-size: 15px;
+    font-family: "Barlow", sans-serif;
+    font-size: 14px;
     margin: 20px 0 20px 0;
 }
 
 .seccion3 p{
-    margin: 20px 0 0 0;
+    margin: 20px 0 20px 0;
 }
 
 .seccion3 h2{
@@ -153,7 +260,6 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: cornflowerblue;
     height: 120px;
 }
 
@@ -172,7 +278,17 @@ body{
     font-family: "Raleway", sans-serif;
 }
 
-.footer_nav ul li{
-    padding: 10px;
-    
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social a img{
+    width: 25px;
+    transition: transform .3s;
+}
+
+.social a img:hover{
+    transform: scale(1.3);
 }
